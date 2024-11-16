@@ -1,6 +1,6 @@
 # React Tailwind Note App
 
-This is a simple React note-taking app that allows users to add, edit, and delete notes. It features a clean, interactive interface built with React and styled using Tailwind CSS. The app includes a navbar, footer, and task management features, providing an intuitive user experience.
+This is a simple React note-taking app that allows users to add, edit, and delete notes. It features a clean, interactive interface built with React and styled using Tailwind CSS. The app includes a navbar, footer, and task management features, providing an intuitive user experience. [TRY NOW!](https://react-tailwind-noteapp.vercel.app/)
 
 ## Features
 
