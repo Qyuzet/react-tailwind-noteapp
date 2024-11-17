@@ -308,7 +308,7 @@ class App extends React.Component {
               <Alert type={this.state.alertType} msg={this.state.alertMsg} />
             )}
           </div>
-          <div className="flex flex-wrap gap-4 items-start justify-start">
+          <div className="flex flex-wrap gap-4 items-start justify-start px-3">
             {this.state.data.map((task) => (
               <TaskCard
                 key={task.id}
