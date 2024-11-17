@@ -193,6 +193,7 @@ function Alert(props) {
 class App extends React.Component {
   constructor(props) {
     super(props);
+
     this.state = {
       input: "",
       data: [],
@@ -205,6 +206,14 @@ class App extends React.Component {
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleEdit = this.handleEdit.bind(this);
     this.handleDelete = this.handleDelete.bind(this);
+    this.saveToLocalStorage = this.saveToLocalStorage.bind(this);
+  }
+
+  componentDidMount() {
+    const rawData = localStorage.getItem("localData");
+    if (rawData) {
+      this.setState({ data: JSON.parse(rawData) });
+    }
   }
 
   showAlert(msg, type) {
@@ -234,27 +243,36 @@ class App extends React.Component {
     }
 
     if (this.state.editingTaskId !== null) {
+      const { input, data, editingTaskId } = this.state;
+
+      const newData = data.map((task) =>
+        task.id === editingTaskId ? { ...task, text: input } : task
+      );
       // Update existing task
-      this.setState((state) => ({
-        data: state.data.map((task) =>
-          task.id === state.editingTaskId
-            ? { ...task, text: state.input }
-            : task
-        ),
+      this.setState(() => ({
+        data: newData,
         input: "",
         editingTaskId: null,
       }));
+      this.saveToLocalStorage(newData);
       this.showAlert("Task updated successfully!", "alert-success");
     } else {
       // Add new task
-      this.setState((state) => ({
+      const { input, data } = this.state;
+      const newData = [...data, { id: Date.now(), text: input }];
+      this.setState(() => ({
         input: "",
-        data: [...state.data, { id: Date.now(), text: state.input }],
+        data: newData,
       }));
+      this.saveToLocalStorage(newData);
       this.showAlert("Task added successfully!", "alert-success");
     }
 
     document.getElementById("task_modal").close();
+  }
+
+  saveToLocalStorage(data) {
+    localStorage.setItem("localData", JSON.stringify(data));
   }
 
   handleEdit(id) {
@@ -270,6 +288,7 @@ class App extends React.Component {
     this.setState((state) => ({
       data: state.data.filter((task) => task.id !== id),
     }));
+    this.saveToLocalStorage(this.state.data.filter((task) => task.id !== id));
     this.showAlert("Task deleted successfully!", "alert-error");
   }
 
