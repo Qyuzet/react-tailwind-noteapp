@@ -9,7 +9,8 @@
 	<code><img width="50" src="https://user-images.githubusercontent.com/25181517/189715289-df3ee512-6eca-463f-a0f4-c10d94a06b2f.png" alt="Figma" title="Figma"/></code>
 </div>
 <br/>
-This is a simple React note-taking app that allows users to add, edit, and delete notes. It features a clean, interactive interface built with React and styled using Tailwind CSS. The app includes a navbar, footer, and task management features, providing an intuitive user experience. [TRY NOW!](https://react-tailwind-noteapp.vercel.app/)
+
+This is a simple React note-taking app that allows users to add, edit, and delete notes. It features a clean, interactive interface built with React and styled using Tailwind CSS. The app includes a navbar, footer, and task management features, providing an intuitive user experience.[TRY NOW!](https://react-tailwind-noteapp.vercel.app/)
 
 ![image](https://github.com/user-attachments/assets/91d8c0a1-aa37-4b9a-ada1-0639e786d96f)
 
