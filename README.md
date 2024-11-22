@@ -1,6 +1,22 @@
 # React Tailwind Note App
-
+<div align="center">
+	<code><img width="50" src="https://user-images.githubusercontent.com/25181517/183897015-94a058a6-b86e-4e42-a37f-bf92061753e5.png" alt="React" title="React"/></code>
+	<code><img width="50" src="https://user-images.githubusercontent.com/25181517/117447155-6a868a00-af3d-11eb-9cfe-245df15c9f3f.png" alt="JavaScript" title="JavaScript"/></code>
+	<code><img width="50" src="https://user-images.githubusercontent.com/25181517/187896150-cc1dcb12-d490-445c-8e4d-1275cd2388d6.png" alt="Redux" title="Redux"/></code>
+	<code><img width="50" src="https://user-images.githubusercontent.com/25181517/183568594-85e280a7-0d7e-4d1a-9028-c8c2209e073c.png" alt="Node.js" title="Node.js"/></code>
+	<code><img width="50" src="https://user-images.githubusercontent.com/25181517/121401671-49102800-c959-11eb-9f6f-74d49a5e1774.png" alt="npm" title="npm"/></code>
+	<code><img width="50" src="https://github-production-user-asset-6210df.s3.amazonaws.com/62091613/261395532-b40892ef-efb8-4b0e-a6b5-d1cfc2f3fc35.png" alt="Vite" title="Vite"/></code>
+	<code><img width="50" src="https://user-images.githubusercontent.com/25181517/189715289-df3ee512-6eca-463f-a0f4-c10d94a06b2f.png" alt="Figma" title="Figma"/></code>
+</div>
+<br/>
 This is a simple React note-taking app that allows users to add, edit, and delete notes. It features a clean, interactive interface built with React and styled using Tailwind CSS. The app includes a navbar, footer, and task management features, providing an intuitive user experience. [TRY NOW!](https://react-tailwind-noteapp.vercel.app/)
+
+![image](https://github.com/user-attachments/assets/91d8c0a1-aa37-4b9a-ada1-0639e786d96f)
+
+![image](https://github.com/user-attachments/assets/4474941d-6188-4677-babb-86a8578e6c68)
+
+![image](https://github.com/user-attachments/assets/e3af6a14-1ddb-48b8-bda3-4cd46fd424ae)
+
 
 ## Features
 
